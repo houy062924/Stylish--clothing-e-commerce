@@ -1,0 +1,402 @@
+/* Universal ------------ */
+
+:root {
+  --black: #000000;
+  --very-light-pink: #d9d9d9;
+  --white: #e8e8e8;
+  --toupe: #c49871;
+  --sepia: #8b572a;
+  --charcoal-grey: #313538;
+}
+
+body {
+  margin: 0;
+}
+
+/* Navigation ------------ */
+
+.navigationCont {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brandCont {
+  display: flex;
+  align-items: center;
+  margin: 25px 0 25px 3%;
+}
+
+.logo {
+  width: 16.125rem;
+  height: 3rem;
+  object-fit: contain;
+}
+
+.menuCont {
+  display: flex;
+  flex-grow: 2;
+}
+
+.menuCont ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.menuCont li {
+  font-family: PingFangTC;
+  font-size: 1.25rem;
+  letter-spacing: 20px;
+  text-align: left;
+}
+
+.menuCont a {
+  color: var(--sepia);
+  text-decoration: none;
+}
+
+.breakline {
+  font-family: PingFangTC;
+  font-size: 1.25rem;
+  letter-spacing: 20px;
+  text-align: left;
+  color: #3f3a3a;
+}
+
+
+.infoCont {
+  display: flex;
+  align-items: center;
+  margin-right: 3%;
+}
+
+.infoCont form {
+  margin-right: 0.625rem;
+}
+
+.infoInput {
+  width: 80%;
+  height: 2.5rem;
+  border: solid 1px #979797;
+  border-radius: 25px;
+  padding: 0 15px;
+  margin-bottom: -7px;
+  margin-right: -35px;
+}
+
+.infoIconCont {
+  display: flex;
+  margin-bottom: -32px
+}
+
+.infoIconCont a:link, .infoIconCont a:visited, .infoIconCont a:hover, .infoIconCont a:active  {
+  text-decoration: none;
+}
+
+.infoIconCont #cartStock:hover  {
+  opacity: 1;
+}
+
+.infoIcon {
+  width: 2.75rem;
+  height: 2.75rem;
+  object-fit: contain;
+  margin: 1.75rem 0 1.75rem 1rem
+}
+
+#searchIcon {
+  width: 1.6rem;
+  height: auto;
+  position: relative;
+  right: 6px;
+  top: 8px;
+}
+
+input:focus, textarea:focus, select:focus{
+  outline: transparent;
+}
+
+#cartStock {
+  background-color: #c49871;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  opacity: 0.9;
+  top: -56px;
+  left: 35px;
+  visibility: hidden;
+}
+
+#cartStockNum {
+  opacity: 1;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.baseCont {
+  height: 2.5rem;
+  background-color: var(--charcoal-grey);
+}
+
+
+/* Profile ------------ */
+
+.profileInfoCont {
+  width: 70%;
+  margin: 50px auto;
+  border: 2px solid #3f3a3a;
+  padding: 50px;
+  display: flex;
+}
+#userPhoto {
+  width: 40%;
+  border: 1px solid #3f3a3a;
+}
+.profileInfo {
+  width: 60%;
+  margin-left: 50px;
+}
+
+
+
+
+
+/* Footer ----------- */
+
+.footerCont {
+  display: flex;
+  background-color: var(--charcoal-grey);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.footerCont ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+.footerText {
+  display: flex;
+  flex-grow: 2;
+}
+
+.footerText li {
+  font-family: PingFangTC;
+  font-size: 1rem;
+  text-align: left;
+  color: #f5f5f5;
+  margin-top: 3px;
+}
+
+.footerText .breakline {
+  color: #f5f5f5;
+  margin: 0 1.5rem;
+  letter-spacing: 0;
+}
+
+.footerText a {
+  text-decoration: none; 
+  color: #f5f5f5;
+  vertical-align: middle;
+}
+
+.footerText a:hover {
+  text-decoration: none; 
+  color: var(--toupe);
+}
+
+.footerIcon {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.footerIcon li {
+  margin-right: 1.875rem;
+}
+
+.footerIcon li:last-child {
+  margin-right: 0;
+}
+
+.footerCopyright {
+  color: #f5f5f5;
+  text-align: right;
+}
+
+
+/* Media Queries ------------ */
+
+
+@media screen and (max-width: 1200px) {
+  .footerCont {
+    display: flex;
+    background-color: var(--charcoal-grey);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+  }
+  .footerIcon li {
+    margin-right: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navigationCont {
+    display: block;
+  }
+  .brandCont {
+    justify-content: center;
+    margin: 25px 0;
+  }
+  .menuCont {
+    background-color: var(--charcoal-grey);
+    align-items: center;
+    justify-content: center;
+  }
+  .menuCont ul {
+    margin: 1.5rem 0;
+    padding: 0;
+    text-indent: 20px;
+  }
+  .menuCont a {
+    color: white;
+  }
+  .menuCont .breakline {
+    color: white;
+  }
+  .infoCont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin-right: 0;
+    margin-bottom: -30px;
+  }
+  #search {
+    display: none;
+  }
+  .infoInput {
+    width: 73vw;
+    position: relative;
+    top: -165px;
+    left: -30px;
+  }
+  .infoCont form {
+    margin-right: 0;
+  }
+  .infoIconCont {
+    background-color: var(--charcoal-grey);
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+  }
+  .infoIcon {
+    margin: 0.5rem 0;
+  }
+  #cartIcon {
+    width: 50vw;
+    content:url("images/cart-mobile.png");
+  }
+  #cartStock {
+    top: -38px;
+    margin: 0 auto;
+    left: 10px;
+  }
+  #memberIcon {
+    width: 50vw;
+    content:url("images/member-mobile.png");
+  }
+  #searchIcon {
+    width: 3rem;
+    height: auto;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+  .baseCont {
+    display: none;
+  }
+  .footerCont {
+    margin-bottom: 3.8rem;
+    flex-wrap: wrap;
+  }
+  .footerText li {
+    margin: 10px;
+  }
+  .footerText .breakline {
+    display: none;
+  }
+  .footerIcon {
+    margin-right: 0;
+  }
+  .footerIcon ul {
+    display: flex;
+  }
+  .footerCopyright {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footerText ul {
+    display: block;
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 13.125rem;
+    height: 3rem;
+    object-fit: contain;
+  }
+  #searchIcon {
+    width: 2rem;
+    height: auto;
+    position: absolute;
+    top: 33px;
+    right: 25px;
+  }
+  .infoInput {
+    width: 65vw;
+  }
+  .menuCont li {
+    font-size: 1.25rem;
+    letter-spacing: 10px;
+    text-indent: 10px;
+  }
+  .footerIcon {
+    margin: 0 auto;
+  }
+  .footerIcon ul {
+    margin: 0;
+  }
+  .footerIcon li {
+    margin-right: 0.8rem;
+    width: 35px;
+  }
+  .footerIcon img {
+    width: 35px;
+  }
+} 
+
+@media screen and (max-width: 400px) {
+  .footerText {
+    justify-content: center;
+  }
+  .footerText ul {
+    margin-bottom: 1.5rem;
+  }
+}

@@ -1,0 +1,124 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168347345-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-168347345-1');
+  </script>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>STYLISH 個人頁面</title>
+  <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+  <script src="js/login.js"></script>
+
+  <div>
+    <div class="navigationCont">
+      <div class="brandCont">
+        <a href="index.html"><img src="css/images/logo.png" class="logo" /></a>
+      </div>
+
+      <div class="menuCont">
+        <ul>
+          <li><a href="#" onclick="getProducts('women')">女裝</a></li>
+          <span class="breakline">|</span>
+          <li><a href="#" onclick="getProducts('men')">男裝</a></li>
+          <span class="breakline">|</span>
+          <li><a href="#" onclick="getProducts('accessories')">配件</a></li>
+        </ul>
+      </div>
+        
+      <div class="infoCont">
+        <div class="infoFormCont">
+          <form>
+            <input type="text" id="search" class="infoInput" name="keyword" value="" required>
+            <input type="image" src="css/images/search.png" id="searchIcon" onclick="searchFunc(); return false;">
+          </form>
+        </div>
+          
+        <div class="infoIconCont">
+          <a href="cart.html">
+            <img src="css/images/cart.png" class="infoIcon" id="cartIcon" />
+            <div id="cartStock"><span id="cartStockNum"></span></div>
+          </a>
+          <a href="#">
+            <img src="css/images/member.png" class="infoIcon" id="memberIcon" onclick="checkLoginState()" />
+          </a>
+        </div>                
+      </div>
+      
+    </div>
+
+    <div class="baseCont"></div>
+
+
+    <div class="profileCont">
+
+      <div class="profileInfoCont">
+        <img id="userPhoto">
+        <div class="profileInfo">
+          <h2 id="userName"></h2>
+          <p id="userEmail"></p>
+        </div>
+        
+      </div>
+
+    </div>
+
+
+
+    <div class="footerCont">
+      <div class="footerText">
+        <div>
+          <ul>
+            <li><a href="#">關於Stylish</a></li>
+            <span class="breakline">|</span>
+            <li><a href="#">服務條款</a></li>
+            <span class="breakline">|</span>
+            <li><a href="#">隱私政策</a></li>
+            <span class="breakline">|</span>
+          </ul>
+        </div>
+        
+        <div>
+          <ul>
+            <li><a href="#">聯絡我們</a></li>
+            <span class="breakline">|</span>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footerIcon">
+        <ul>
+          <li>
+            <a href="#"><img src="css/images/line.png"></a>
+          </li>
+          <li>
+            <a href="#"><img src="css/images/twitter.png"></a>
+          </li>
+          <li>
+            <a href="#"><img src="css/images/facebook.png"></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footerCopyright">
+        <p>@ 2018. All rights reserved.</p>
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="js/profile.js"></script>
+</body>
+</html>
