@@ -39,7 +39,7 @@ The site implements features that include
 **Home Page**
   * Implemented infinite scroll as pagination method
   
-![Alt text](readme/infinitscroll.gif)
+![Alt text](readme/infinitescroll.gif)
 
 **Product Page**
 
@@ -52,6 +52,6 @@ The site implements features that include
 **Additional Features**
   * Implemented in collaboration with Back-End and Android team
   
-![Alt text](readme/coupons.gif)
+![Alt text](readme/coupon.gif)
 ![Alt text](readme/changecolumns.gif)
 
